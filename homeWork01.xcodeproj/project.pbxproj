@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBE086917F7D815D10C37252 /* Pods_homeWork01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5852B7DE59D04E3D65B71586 /* Pods_homeWork01.framework */; };
 		E01383EC1E6899E200F7401B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E01383EB1E6899E200F7401B /* main.m */; };
 		E01383EF1E6899E200F7401B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E01383EE1E6899E200F7401B /* AppDelegate.m */; };
 		E01383F21E6899E200F7401B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01383F11E6899E200F7401B /* ViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31D4BBE4C4D88A82C2976611 /* Pods-homeWork01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork01/Pods-homeWork01.debug.xcconfig"; sourceTree = "<group>"; };
+		5852B7DE59D04E3D65B71586 /* Pods_homeWork01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeWork01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C081A3F91E395B7A9073D95 /* Pods-homeWork01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork01.release.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork01/Pods-homeWork01.release.xcconfig"; sourceTree = "<group>"; };
 		E01383E71E6899E200F7401B /* homeWork01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeWork01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01383EB1E6899E200F7401B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E01383ED1E6899E200F7401B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE086917F7D815D10C37252 /* Pods_homeWork01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67D60BDF8681EFA14FFD983F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D4BBE4C4D88A82C2976611 /* Pods-homeWork01.debug.xcconfig */,
+				5C081A3F91E395B7A9073D95 /* Pods-homeWork01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92CDF7D84846ED85F8FCD7BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5852B7DE59D04E3D65B71586 /* Pods_homeWork01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E01383DE1E6899E100F7401B = {
 			isa = PBXGroup;
 			children = (
 				E01383E91E6899E200F7401B /* homeWork01 */,
 				E01383E81E6899E200F7401B /* Products */,
+				67D60BDF8681EFA14FFD983F /* Pods */,
+				92CDF7D84846ED85F8FCD7BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E01383FE1E6899E300F7401B /* Build configuration list for PBXNativeTarget "homeWork01" */;
 			buildPhases = (
+				58E155FFAAF27799108F6D91 /* [CP] Check Pods Manifest.lock */,
 				E01383E31E6899E200F7401B /* Sources */,
 				E01383E41E6899E200F7401B /* Frameworks */,
 				E01383E51E6899E200F7401B /* Resources */,
+				12B1D8F0A2A867F89B958D6A /* [CP] Embed Pods Frameworks */,
+				4775DC04E9BD33D16446057C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12B1D8F0A2A867F89B958D6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-homeWork01/Pods-homeWork01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4775DC04E9BD33D16446057C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-homeWork01/Pods-homeWork01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E155FFAAF27799108F6D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E01383E31E6899E200F7401B /* Sources */ = {
@@ -274,6 +349,7 @@
 		};
 		E01383FF1E6899E300F7401B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D4BBE4C4D88A82C2976611 /* Pods-homeWork01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = homeWork01/Info.plist;
@@ -287,6 +363,7 @@
 		};
 		E01384001E6899E300F7401B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C081A3F91E395B7A9073D95 /* Pods-homeWork01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = homeWork01/Info.plist;
