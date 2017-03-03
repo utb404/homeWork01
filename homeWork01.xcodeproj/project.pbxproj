@@ -13,6 +13,7 @@
 		E01383F51E6899E300F7401B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01383F31E6899E300F7401B /* Main.storyboard */; };
 		E01383F71E6899E300F7401B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01383F61E6899E300F7401B /* Assets.xcassets */; };
 		E01383FA1E6899E300F7401B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01383F81E6899E300F7401B /* LaunchScreen.storyboard */; };
+		E04871A91E69533E009F8DE4 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E04871A81E69533E009F8DE4 /* pic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E01383F61E6899E300F7401B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E01383F91E6899E300F7401B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E01383FB1E6899E300F7401B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04871A81E69533E009F8DE4 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		E01383E91E6899E200F7401B /* homeWork01 */ = {
 			isa = PBXGroup;
 			children = (
+				E04871A81E69533E009F8DE4 /* pic.jpg */,
 				E01383ED1E6899E200F7401B /* AppDelegate.h */,
 				E01383EE1E6899E200F7401B /* AppDelegate.m */,
 				E01383F01E6899E200F7401B /* ViewController.h */,
@@ -139,6 +142,7 @@
 			files = (
 				E01383FA1E6899E300F7401B /* LaunchScreen.storyboard in Resources */,
 				E01383F71E6899E300F7401B /* Assets.xcassets in Resources */,
+				E04871A91E69533E009F8DE4 /* pic.jpg in Resources */,
 				E01383F51E6899E300F7401B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +277,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = homeWork01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hello.homeWork01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -284,9 +290,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = homeWork01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hello.homeWork01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -309,6 +317,7 @@
 				E01384001E6899E300F7401B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
